@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Novo cadastro</title>
+
+  </head>
+  <body>
+    <%= form_for @nota do |f| %>
+
+      Nome: <imput type="text" name="nota[aluno]" /></imput><br/>
+      Parcial:
+       <imput type="number" name="nota[nota1]" step ="0.01" /><br/>
+      Global:
+      <imput type="number" name=nota[nota2]"" step="0.01" /><br/>
+      Média:
+      <imput type="number" name="nota[media]" step="0.01" /><br/>
+      <button type="submit">Cadastrar</button>
+
+    <% end %>
+  </body>
+</html>

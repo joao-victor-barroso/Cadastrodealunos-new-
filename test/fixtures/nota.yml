@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aluno: MyString
+  nota1: 9.99
+  nota2: 9.99
+  media: 9.99
+
+two:
+  aluno: MyString
+  nota1: 9.99
+  nota2: 9.99
+  media: 9.99

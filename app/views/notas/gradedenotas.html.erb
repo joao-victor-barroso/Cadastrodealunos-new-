@@ -1,0 +1,51 @@
+<html>
+    <head>
+    </head>
+    <body>
+      <%= nav_bar brand: "Grade de notas", brand_link: root_url %>
+        <table class = "table table-hover table-dark">
+            <thead>
+                  <tr>
+                    <th>ALUNO</th>
+                    <th>PARCIAL</th>
+                    <th>GLOBAL</th>
+                    <th>MÉDIA</th>
+                  </tr>
+                  <tr>
+            </thead>
+            <tbody>
+                  <% @chamada_por_media.each do |nota |%>
+                  <tr>
+                    <td><%= nota.aluno %></td>
+                    <td><%= nota.nota1%></td>
+                    <td><%= nota.nota2 %></td>
+                    <td><%= nota.media %></td>
+                  </tr>
+                  <%end%>
+            </tbody>
+        </table>
+        <table class = "table table-hover table-dark">
+            <thead>
+                  <tr>
+                    <th>ALUNO</th>
+                    <th>PARCIAL</th>
+                    <th>GLOBAL</th>
+                    <th>MÉDIA</th>
+                  </tr>
+                  <tr>
+            </thead>
+            <tbody>
+
+                  <% @chamada_por_nome.each do |nota |%>
+                  <tr>
+                    <td><%= nota.aluno %></td>
+                    <td><%= nota.nota1%></td>
+                    <td><%= nota.nota2 %></td>
+                    <td><%= nota.media %></td>
+                  </tr>
+                  <%end%>
+            </tbody>
+        </table>
+    </body>
+
+</html>
